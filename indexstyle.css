@@ -1,0 +1,106 @@
+body { 
+    background: url(images/background.jpg); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    backdrop-filter: blur(3px); 
+
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    margin: 0; 
+    overflow: hidden; 
+}
+
+main {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    align-items: center;    /* vertically center items */
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.navigation-area ul {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.logo-area a {
+    color: white;
+    margin: 20px;
+}
+
+ul li a {
+    color: white;
+}
+
+.login-button, .signup-button  {
+    color: white;
+    width: 60px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: red;
+}
+
+.auth-area , .login-button , .signup-button, a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.auth-area {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-section { 
+    height: 100%;
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.hero-card h1 {
+    color: white;
+    font-size: 60px;
+    margin: 10px;
+}
+
+.hero-card p {
+    font-size: 20px;
+    color: white;
+}
+
+.hero-card a {
+    color: white;
+    height: 40px;
+    width: 100px;
+    border: 2px solid black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.hero-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
