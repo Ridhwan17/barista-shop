@@ -117,10 +117,32 @@ main {
     color: #0068C9;
     font-style: italic;
     margin: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
+/* !============================= brands list ======================= */
 .brand-list img {
     width: auto;
-    height: 112px;
+    height: 200px;
     object-fit: contain;
+    border-radius: 10px;
+}
+
+.brand-list {
+    display: flex;
+    gap: 90px;
+}
+
+/* !============================= contact us (footer detail) ======================= */
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.footer-collumn {
+    gap: 20px;
 }
