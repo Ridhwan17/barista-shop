@@ -42,6 +42,8 @@ body {
     grid-template-rows: repeat(2, auto);
     gap: 20px;
     padding: 20px;
+    align-items: stretch;
+    min-height: 400px;
 }
 
 .menu-card {
@@ -54,9 +56,10 @@ body {
 }
 
 .menu-card img {
-    max-width: 200px;
-    max-height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .menu-description h2 {
@@ -66,6 +69,21 @@ body {
 .menu-info {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1;                               /* ! take up the remaining space inside card*/
+}
+
+.menu-buttom {
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+}
+
+.order-button {
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 50px;
 }
