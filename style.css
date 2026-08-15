@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(221, 236, 248);
+    background-color: #F0FAFE;
 }
 
 .container {
@@ -10,7 +10,7 @@ body {
 
 .logo-area a {
     text-decoration: none;
-    color: blue;
+    color: #0068C9;
     font-size: 20px;
     margin: 10px;
     font-style: italic;
@@ -18,7 +18,7 @@ body {
 
 .food-drinks-button a {
     text-decoration: none;
-    color: blue;
+    color: #0068C9;
     font-size: 20px;
     margin: 10px;
     font-style: italic;
@@ -32,7 +32,7 @@ body {
 }
 
 .container h1 {
-    color: blue;
+    color: #0068C9;
 }
 
 main {
@@ -40,7 +40,9 @@ main {
     overflow: hidden;
 }
 
-/* !============================= menu grid and card =======================*/
+
+/* !============================= menu grid and card ======================= */
+
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -52,7 +54,7 @@ main {
 }
 
 .menu-card {
-    background-color: rgb(172, 224, 231);
+    background-color: #D5EDFC;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -68,7 +70,7 @@ main {
 }
 
 .menu-description h2 {
-    color: rgb(51, 14, 187);
+    color: #0057A8;
 }
 
 .menu-info {
@@ -76,7 +78,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    flex: 1;                               /* ! take up the remaining space inside card*/
+    flex: 1;
 }
 
 .menu-buttom {
@@ -87,7 +89,7 @@ main {
 }
 
 .order-button {
-    background-color: blue;
+    background-color: #008FE3;
     color: white;
     width: auto;
     height: auto;
@@ -96,12 +98,13 @@ main {
 }
 
 .menu-price {
-    color: rgb(62, 62, 185);
+    color: #0068C9;
     font-size: 18px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
-/* !============================= footer =======================*/
+
+/* !============================= footer ======================= */
 
 .brand-section {
     display: flex;
@@ -111,7 +114,7 @@ main {
 }
 
 .section-title h2 {
-    color: rgb(51, 14, 187);
+    color: #0068C9;
     font-style: italic;
     margin: 20px;
 }
