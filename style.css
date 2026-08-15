@@ -11,8 +11,61 @@ body {
 .logo-area a {
     text-decoration: none;
     color: blue;
+    font-size: 20px;
+    margin: 10px;
+    font-style: italic;
 }
 
 .food-drinks-button a {
     text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    margin: 10px;
+    font-style: italic;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+
+.container h1 {
+    color: blue;
+}
+
+/* !============================= menu grid and card =======================*/
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-card {
+    background-color: rgb(172, 224, 231);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.menu-card img {
+    max-width: 200px;
+    max-height: 300px;
+    border-radius: 20px;
+}
+
+.menu-description h2 {
+    color: rgb(51, 14, 187);
+}
+
+.menu-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
