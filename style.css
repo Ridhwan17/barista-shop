@@ -35,6 +35,11 @@ body {
     color: blue;
 }
 
+main {
+    height: 100vh;
+    overflow: hidden;
+}
+
 /* !============================= menu grid and card =======================*/
 .menu-grid {
     display: grid;
@@ -88,4 +93,31 @@ body {
     height: auto;
     padding: 7px;
     border-radius: 10px;
+}
+
+.menu-price {
+    color: rgb(62, 62, 185);
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+/* !============================= footer =======================*/
+
+.brand-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title h2 {
+    color: rgb(51, 14, 187);
+    font-style: italic;
+    margin: 20px;
+}
+
+.brand-list img {
+    width: auto;
+    height: 112px;
+    object-fit: contain;
 }
