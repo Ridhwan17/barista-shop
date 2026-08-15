@@ -1,34 +1,49 @@
-body { 
-    background: url(images/background.jpg); 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    backdrop-filter: blur(3px); 
+* {
+    box-sizing: border-box;
+}
 
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Keeps screen non-scrollable */
+    font-family: 'Poppins', sans-serif;
+}
+
+body { 
+    background: url(images/background.jpg) center/cover no-repeat; 
     display: flex; 
     flex-direction: column; 
-    min-height: 100vh; 
-    margin: 0; 
-    overflow: hidden; 
+    color: #ffffff;
+    backdrop-filter: blur(2px);
 }
 
-main {
-    flex: 1;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Header Section */
+header {
+    width: 100%;
+    padding: 24px 40px;
 }
-.container {
+
+header .container {
     display: flex;
-    align-items: center;    /* vertically center items */
+    align-items: center;    
     justify-content: space-between;
-    margin: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-area a {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
 }
 
 .navigation-area ul {
     display: flex;
-    gap: 20px;
+    gap: 32px;
     margin: 0;
     padding: 0;
 }
@@ -37,70 +52,112 @@ ul li {
     list-style: none;
 }
 
-.logo-area a {
-    color: white;
-    margin: 20px;
-}
-
 ul li a {
-    color: white;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
 }
 
-.login-button, .signup-button  {
-    color: white;
-    width: 60px;
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 30px;
-    background-color: red;
+ul li a:hover {
+    opacity: 0.8;
 }
 
-.auth-area , .login-button , .signup-button, a {
+/* Auth Buttons */
+.auth-area {
     display: flex;
+    gap: 12px;
+}
+
+.login-button, .signup-button {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 22px;
+    border-radius: 6px;
+    border: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.auth-area {
+.login-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    backdrop-filter: blur(5px);
+}
+
+.signup-button {
+    background-color: #1d9bf0;
+    color: #ffffff;
+}
+
+.login-button:hover, .signup-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* Fully Centered Main Section */
+main {
+    flex: 1;
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero-section { 
-    height: 100%;
-
     display: flex; 
     justify-content: center; 
     align-items: center; 
+    width: 100%;
 }
 
-.hero-card h1 {
-    color: white;
-    font-size: 60px;
-    margin: 10px;
-}
-
-.hero-card p {
-    font-size: 20px;
-    color: white;
-}
-
-.hero-card a {
-    color: white;
-    height: 40px;
-    width: 100px;
-    border: 2px solid black;
-    align-items: center;
+.hero-section .container {
     display: flex;
     justify-content: center;
-    border-radius: 30px;
-    text-decoration: none;
+    align-items: center;
+    margin: 0;
 }
 
 .hero-card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+.hero-card h1 {
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.5px;
+}
+
+.hero-card p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 32px 0;
+    font-weight: 400;
+}
+
+.hero-button {
+    color: #ffffff;
+    background-color: #70c4f4;
+    padding: 12px 38px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-button:hover {
+    background-color: #5ab6ee;
+    transform: translateY(-2px);
+}
