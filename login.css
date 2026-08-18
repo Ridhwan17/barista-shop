@@ -1,0 +1,122 @@
+body {
+    /*background*/
+    background-image: url(background3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.login-title h1 {
+    color: white;
+}
+
+.login-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px 30px 30px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+
+    /*glass clear*/
+    backdrop-filter: blur(10px);
+}
+
+form {
+    padding: 20px;
+}
+
+.upper-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 40px 0;
+}
+
+.lower-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upper-section label {
+    display: none;
+}
+
+.upper-section input {
+    width: 300px;
+    height: 40px;
+    background: transparent;  /*make it transparent*/
+    border: 2px solid white;
+    border-radius: 100px;
+    padding: 0 20px;
+    color: white;           /*!make user type become white*/
+}
+
+.upper-section input::placeholder {         /*?make place holder become white*/
+
+    color: white;
+    opacity: 1;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me label {
+    color: white;
+}
+
+.forgot-password {
+    color: white;
+}
+
+.login-btn {
+    width: 300px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 100px;
+    cursor: pointer;
+
+    background: transparent;
+    color: white;
+}
+
+.lower-section p {
+    color: white;
+}
+
+.register-link {
+    color: white;
+}
+
+footer {
+    padding: 15px;
+    text-align: right;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+    font-size: 12px;
+}

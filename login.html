@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>log in page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-container">
+        <div class="login-card" >  <!-- !login card-->
+            <header>
+                <div class="login-title">
+                    <h1>login</h1>
+                </div>
+            </header>
+
+            <!--! form-->
+            <form action="submit.php" method="post">
+                <!-- ! upper section-->
+                <section class="upper-section">
+                    <!-- ?input for email-->
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" name="email" placeholder="Email ID">
+
+                    <!-- ?input for email-->
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+
+                </section>
+
+                <!-- !middle section-->
+                <section class="middle-section">
+                    <div class="remember-me">
+                        <!-- ?input for checkbox-->
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                
+                    <!-- ?button for forgot password-->
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </section>
+
+                <!-- !lower section-->
+                <section class="lower-section">
+                    <!-- ?login button-->
+                    <button type="submit" class="login-btn">Login</button>
+
+                    <!-- ?register link-->
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </section>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>@Nor Ridhwan bin Zainudin 2026</p>
+    </footer>
+</body>
+</html>
