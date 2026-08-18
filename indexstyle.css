@@ -11,7 +11,7 @@ html, body {
 }
 
 body { 
-    background: url(images/background.jpg) center/cover no-repeat; 
+    background: url(images/background2.jpg) center/cover no-repeat; 
     display: flex; 
     flex-direction: column; 
     color: #ffffff;
